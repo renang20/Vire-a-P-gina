@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="cadastro-container">
+        <div class="logo-container">
+            <img src="./assents/logo.1.png" alt="Logo da Empresa">
+        </div>
+        <form class="cadastro-form">
+            <div class="cadastro-title">
+                <h1>Cadastro</h1>
+            </div>
+            <div class="input-container">
+                <input type="text" id="nomeUsuario" placeholder="Nome de Usuário" required>
+            </div>
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-container">
+                <input type="tel" id="telefone" placeholder="Número de Telefone" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="senha" placeholder="Senha" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="repetirSenha" placeholder="Repetir Senha" required>
+            </div>
+            <div class="input-container">
+                <input type="date" id="dataNascimento" placeholder="Data de Nascimento" required>
+            </div>
+            <button type="button" id="cadastroButton">Cadastrar</button>
+
+<script>
+    // Adicionar um evento de clique ao botão "Cadastrar"
+    document.getElementById("cadastroButton").addEventListener("click", function() {
+        // Obter os valores dos campos
+        var nomeUsuario = document.getElementById("nomeUsuario").value;
+        var email = document.getElementById("email").value;
+        var telefone = document.getElementById("telefone").value;
+        var senha = document.getElementById("senha").value;
+        var repetirSenha = document.getElementById("repetirSenha").value;
+        var dataNascimento = document.getElementById("dataNascimento").value;
+
+        // Verificar se todos os campos estão preenchidos
+        if (nomeUsuario !== "" && email !== "" && telefone !== "" && senha !== "" && repetirSenha !== "" && dataNascimento !== "") {
+            // Verificar se as senhas coincidem
+            if (senha === repetirSenha) {
+                // Redirecionar para a página de login após o cadastro
+                window.location.href = "login.html";
+            } else {
+                alert("As senhas não coincidem. Por favor, verifique.");
+            }
+        } else {
+            alert("Por favor, preencha todos os campos.");
+        }
+    });
+</script>
+        </form>
+    </div>
+</body>
+</html>

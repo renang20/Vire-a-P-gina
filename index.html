@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assents/logo.1.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+    <!-- estilos rápidos -->
+    <style>
+        /* Estilos de navegação */
+        .navegacao {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .navegacao button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+         /* Adicione uma imagem de fundo ao carrossel */
+         #carouselExample {
+            background-image: url("");
+            background-size: cover;
+            background-position: center;
+            margin-top: 100px;
+        }
+
+        /* Ajuste o tamanho do carrossel */
+        .carousel-inner {
+            max-height: 250px; /* Ajuste a altura desejada */
+        }
+
+        /* Adicione estilos para tornar as setas de navegação mais finas */
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%; /* Ajuste a largura desejada */
+        }
+
+        .card-spacing {
+            margin-bottom: 20px; /* Altere esse valor para ajustar o espaçamento entre os cards */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="logotip-link" href="index.html">
+                <img src="./assents/logo.1.png" alt="Logotipo" class="logo" style="max-width: 100px; height: auto;">
+            </a>
+            <div class="navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                </ul>
+                <form class="d-flex ms-5" role="search">
+                    <div class="input-group">
+                        <!-- Adicione um estilo CSS para aumentar a largura do campo de entrada -->
+                        <input class="form-control me-8 custom-search-input" type="search" placeholder="Buscar" aria-label="Search" style="width: 400px;">
+                        <button class="btn btn-outline-secondary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="botoes-nav">
+                <div class="navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown"> <!-- Adicione a classe dropdown aqui -->
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end"> <!-- Remova a classe align-right aqui -->
+                                <li><a class="dropdown-item" href="#">Livros</a></li>
+                                <li><a class="dropdown-item" href="#">Autores</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Grupos</a></li>
+                            </ul>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-heart"></i> Minha lista
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ativo" aria-current="page" href="#">
+                            <i class="fas fa-user"></i> Usuário
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link desativado" aria-disabled="true"></a>
+                    </li>
+                </ul>
+            </div>      
+        </div>
+    </div>
+      <ul class="navbar-nav mr-auto">
+          <!-- Seus outros elementos do menu -->
+          <li class="nav-item">
+              <a class="nav-link" href="login.html">Entrar</a>
+          </li>
+      </ul>
+    </nav>
+
+    <br>
+   <!-- carrossel -->
+    <div class="container">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assents/exemplocarrossel.1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assents/banner1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+<br>
+<br>
+<h1 id="titulo-autor">Autores</h1>
+<br>
+<!-- autores -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card bg-dark text-white">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./assents/autorexemplo.jpeg" class="card-img rounded img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">seu ze</h5>
+                            <p class="card-text">This is a card with supporting text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-dark text-white">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./assents/autorexemplo.jpeg" class="card-img rounded img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">zezim</h5>
+                            <p class="card-text">This is a card with supporting text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repita este bloco de código para criar mais dois cards -->
+        <div class="col-md-3">
+            <div class="card bg-dark text-white">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./assents/autorexemplo.jpeg" class="card-img rounded img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">tio chico</h5>
+                            <p class="card-text">This is a card with supporting text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-dark text-white">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="./assents/autorexemplo.jpeg" class="card-img rounded img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">vó fátima</h5>
+                            <p class="card-text">This is a card with supporting text.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 id="titulo-livro"> Mais procurados</h1>
+    <div class="container">
+        <div class="row">
+            <!-- Elemento 1 -->
+            <div class="col-md-2">
+                <div class="image-container">
+                    <a href="livro1.html"><img src="./assents/exemplo.jpg" alt="Imagem 5"></a>
+                </div>
+                <div class="text-container">
+                    <p>Livro 1</p>
+                    <a href="maps.html" style="text-decoration: none; color: inherit;">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> 5km
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.950l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg> 5.0
+                        </p>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="image-container">
+                    <a href="livro1.html"><img src="./assents/exemplo.jpg" alt="Imagem 5"></a>
+                </div>
+                <div class="text-container">
+                    <p>livro 2</p>
+                    <a href="maps.html" style="text-decoration: none; color: inherit;">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> 5km
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.950l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg> 5.0
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-container">
+                    <a href="livro2.html"><img src="./assents/exemplo.jpg" alt="Imagem 5"></a>
+                </div>
+                <p>livro 3</p>
+                <div class="text-container">
+                    <a href="maps2.html" style="text-decoration: none; color: inherit;">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> 5km
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.950l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg> 5.0
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="image-container">
+                    <a href="livro1.html"><img src="./assents/exemplo.jpg" alt="Imagem 5"></a>
+                </div>
+                <p>livro 4</p>
+                <div class="text-container">
+                    <a href="maps.html" style="text-decoration: none; color: inherit;">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> 5km
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.950l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg> 5.0
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="image-container">
+                    <a href="livro1.html"><img src="./assents/exemplo.jpg" alt="Imagem 5"></a>
+                </div>
+                <p>livro 5</p>
+                <div class="text-container">
+                    <a href="maps.html" style="text-decoration: none; color: inherit;">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> 5km
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.950l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg> 5.0
+                        </p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="image-container">
+                    <a href="livro1.html"><img src="./assents/exemplo.jpg" alt="Imagem 5"></a>
+                </div>
+                <p>livro 6</p>
+                <div class="text-container">
+                    <a href="maps.html" style="text-decoration: none; color: inherit;">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg> 5km
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.950l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                            </svg> 5.0
+                        </p>
+                    </a>
+                </div>
+            </div>
+</body>
+<footer class="bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <!-- Informações de Contato -->
+            <div class="col-md-4">
+                <h4>Contato</h4>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> Rua Augusta, 123, São Paulo, SP, 01305-000, Brasil
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i> Email: <a href="mailto:contato@seusite.com">contato@seusite.com</a>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> Telefone: (81) 3456-7890
+                </p>
+            </div>
+            <!-- Links Rápidos -->
+            <div class="col-md-4">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <!-- Redes Sociais -->
+            <div class="col-md-4">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/seuinstagram" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/seufacebook" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/seutwitter" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4 mb-3">
+        <div class="row">
+            <!-- Direitos Autorais -->
+            <div class="col-md-6">
+                <p>&copy; 2023 Vire a página. Todos os direitos reservados.</p>
+            </div>
+            <!-- Política de Privacidade -->
+            <div class="col-md-6 text-end">
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</html>

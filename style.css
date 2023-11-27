@@ -1,0 +1,110 @@
+/* Importar a fonte Open Sans do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Definir a fonte para o corpo do texto */
+body {
+    font-family: 'Lora', serif;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+/* Definir a fonte para os cabeçalhos, se desejar */
+h1, h2, h3, h4, h5, h6 {
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+}
+.input-group{
+    padding-right: 280px;
+}
+.botoes-nav{
+    font-size: 25px;    
+}
+#titulo-autor{
+    color: gray;
+    font-size: 4vh;
+   padding-left: 4em;
+   position: absolute;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card .card-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.custom-search-input {
+    width: 500vh; /* Ajuste a largura conforme necessário */
+}
+
+.custom-search-button {
+    width: 100px; /* Ajuste a largura conforme necessário */
+}
+
+/* Ajuste o tamanho do ícone conforme necessário (exemplo usando Bootstrap Icons) */
+.custom-search-button .bi-search {
+    font-size: 90px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+
+/* Estilos para o container geral */
+.container {
+    padding: 30px;
+}
+
+/* Estilos para as colunas */
+.col-md-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para as imagens */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o texto */
+.text-container {
+    text-align: center;
+}
+/* CSS para adicionar a animação */
+.image-container img {
+    width: 120px;
+    padding-top: 50px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out; /* Define a transição suave de 0.2 segundos */
+}
+
+/* Adiciona a escala quando o mouse passa sobre a imagem */
+.image-container img:hover {
+    transform: scale(1.05); /* Aumenta a escala em 5% */
+}
+#titulo-livro{
+    color: gray;
+    font-size: 4vh;
+    padding-top: 40px;
+    position: absolute;
+}
+/* Estilos para o card */
+.card {
+    transition: transform 0.2s; /* Adiciona uma transição suave */
+}
+
+/* Estilos quando o mouse passa por cima do card */
+.card:hover {
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    /* Outros estilos desejados ao passar o mouse, como sombra ou borda */
+}
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelogin.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="./assents/logo.1.png" alt="Logo da Empresa">
+        </div>
+        <form class="login-form" id="loginForm">
+            <div class="login-title">
+                <h1>Login</h1>
+            </div>
+            <div class="input-container">
+                <input type="text" id="usuario" placeholder="Usuário" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="senha" placeholder="Senha" required>
+            </div>
+            <div class="checkbox-container">
+                <label for="lembrar">Lembrar-me</label>
+                <input type="checkbox" id="lembrar">
+            </div>
+            <button type="button" id="entrarButton">Entrar</button>
+            <p class="cadastro-link">Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+            <p class="senha-link"><a href="#">Esqueci a senha</a></p>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("entrarButton").addEventListener("click", function() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+
+            if (usuario.trim() !== "" && senha.trim() !== "") {
+                // Redirecionar para o index.html após o clique em "Entrar"
+                window.location.href = "index.html"; // Substitua "index.html" pelo URL correto
+            } else {
+                alert("Por favor, preencha todos os campos.");
+            }
+        });
+    </script>
+</body>
+</html>

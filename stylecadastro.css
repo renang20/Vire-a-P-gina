@@ -1,0 +1,94 @@
+body {
+  background-image: url('sua-imagem-de-fundo.jpg');
+  /* Substitua pela URL da sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+}
+
+.cadastro-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  /* Arredondar cantos */
+  padding: 40px;
+  /* Espaçamento na parte interna */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  /* Largura máxima */
+  width: 100%;
+}
+
+.logo-container img {
+  width: 100px;
+  /* Largura da logo */
+  margin-bottom: 20px;
+  /* Espaço entre a logo e o título */
+}
+
+.cadastro-form h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cadastro-title {
+  background-color: #84124b;
+  ;
+  /* Cor de fundo */
+  border-radius: 20px;
+  /* Arredondar cantos no topo */
+  padding: 5px;
+  /* Espaçamento interno */
+  margin-top: 0;
+  /* Remover margem superior do título */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.cadastro-title h1 {
+  color: white;
+  /* Cor do texto */
+  margin: 0;
+  font-size: 30px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  /* Remover borda */
+  border-radius: 20px;
+  /* Remover arredondamento */
+  background-color: rgba(255, 255, 255, 0.7);
+  /* Cor de fundo com transparência */
+  font-size: 14px;
+  box-shadow: 2px 2px 3px rgba(149, 0, 0, 0.1) inset;
+  /* Adicionar sombra no placeholder */
+}
+
+button {
+  background-color: #84124b;
+  color: white;
+  border: none padding: 20px 40px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FF4070;
+}
